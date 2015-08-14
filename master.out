@@ -1,0 +1,19 @@
+DEBUG project root "/Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug"
+DEBUG matchPackages: /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/src ...
+DEBUG args: [cmd/hello]
+DEBUG loadPackage: github.com/veandco/go-sdl2/sdl true (/Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl)
+DEBUG loadPackage: cmd/hello true (/Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/src/cmd/hello)
+DEBUG buildPackage: cmd/hello
+DEBUG buildPackage: github.com/veandco/go-sdl2/sdl
+DEBUG cd /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl; [pkg-config --cflags sdl2]
+DEBUG cd /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl; [pkg-config --libs sdl2]
+DEBUG cd /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl; [/usr/local/Cellar/go/1.4.2/libexec/pkg/tool/darwin_amd64/cgo -objdir /var/folders/v1/czky6_bs48qgpmxf622lm1vr0000gn/T/gb193151697/github.com/veandco/go-sdl2 -- -I /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl audio.go blendmode.go clipboard.go cpuinfo.go endian.go error.go events.go filesystem.go gamecontroller.go gesture.go haptic.go hints.go joystick.go keyboard.go keycode.go loadso.go log.go mouse.go pixels.go power.go rect.go render.go rwops.go scancode.go sdl.go surface.go sysrender.go syswm.go timer.go touch.go version.go video.go]
+In file included from /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl/audio.go:3:
+/Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl/sdl_wrapper.h:5:11: fatal error: 'SDL.h' file not found
+        #include <SDL.h>
+                 ^
+1 error generated.
+DEBUG removing work directory: /var/folders/v1/czky6_bs48qgpmxf622lm1vr0000gn/T/gb193151697
+DEBUG build duration: 93.330948ms map[]
+FATAL command "build" failed: # /usr/local/Cellar/go/1.4.2/libexec/pkg/tool/darwin_amd64/cgo -objdir /var/folders/v1/czky6_bs48qgpmxf622lm1vr0000gn/T/gb193151697/github.com/veandco/go-sdl2 -- -I /Users/sheenobu/Development/go/src/github.com/sheenobu/gb-bug/vendor/src/github.com/veandco/go-sdl2/sdl audio.go blendmode.go clipboard.go cpuinfo.go endian.go error.go events.go filesystem.go gamecontroller.go gesture.go haptic.go hints.go joystick.go keyboard.go keycode.go loadso.go log.go mouse.go pixels.go power.go rect.go render.go rwops.go scancode.go sdl.go surface.go sysrender.go syswm.go timer.go touch.go version.go video.go: exit status 2
+
